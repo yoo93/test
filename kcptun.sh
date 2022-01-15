@@ -946,6 +946,9 @@ install_supervisor() {
 		(
 			set -x
 			#pip install --upgrade supervisor
+			cat >&2 <<-'EOF'
+		跳过升级
+		EOF
 		)
 	fi
 
