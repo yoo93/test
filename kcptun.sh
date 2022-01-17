@@ -958,7 +958,7 @@ install_supervisor() {
 	else
 		(
 			set -x
-			pip install --upgrade supervisor
+			# pip install --upgrade supervisor
 		)
 	fi
 
