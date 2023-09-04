@@ -1,4 +1,4 @@
-#!/bin/csh
+#!/bin/sh
 
 : <<-'EOF'
 Copyright 2017-2019 Xingwang Liao <kuoruan@gmail.com>
@@ -945,7 +945,7 @@ install_supervisor() {
 	else
 		(
 			set -x
-			pip install --upgrade supervisor
+			# pip install --upgrade supervisor
 		)
 	fi
 
@@ -1945,7 +1945,7 @@ set_hidden_parameters() {
 				continue
 			fi
 
-			sockbuf=$(expr $input * 1024 * 1024)
+			sockbuf=$(expr $input \* 1024 \* 1024)
 		fi
 		break
 	done
@@ -1970,7 +1970,7 @@ set_hidden_parameters() {
 				continue
 			fi
 
-			smuxbuf=$(expr $input * 1024 * 1024)
+			smuxbuf=$(expr $input \* 1024 \* 1024)
 		fi
 		break
 	done
